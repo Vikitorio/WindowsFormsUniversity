@@ -50,37 +50,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Adress.cs" />
-    <Compile Include="ChartTab.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ChartTab.Designer.cs">
-      <DependentUpon>ChartTab.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CreateTeacherForm.cs">
+    <Compile Include="Classes\Adress.cs" />
+    <Compile Include="Tabs\TabTeachers\CreateTeacherForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CreateTeacherForm.Designer.cs">
+    <Compile Include="Tabs\TabTeachers\CreateTeacherForm.Designer.cs">
       <DependentUpon>CreateTeacherForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="CreateStudentForm.cs">
+    <Compile Include="Tabs\TabTeachers\CreateStudentForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CreateStudentForm.Designer.cs">
+    <Compile Include="Tabs\TabTeachers\CreateStudentForm.Designer.cs">
       <DependentUpon>CreateStudentForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="listHuman.cs" />
-    <Compile Include="listTeacher.cs" />
-    <Compile Include="Human.cs" />
+    <Compile Include="Classes\listHuman.cs" />
+    <Compile Include="Classes\listTeacher.cs" />
+    <Compile Include="Classes\Human.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="Classes\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Student.cs" />
+    <Compile Include="Classes\Student.cs" />
     <Compile Include="Tabs\TabCharts.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,32 +93,29 @@
     <Compile Include="Tabs\TabNods.Designer.cs">
       <DependentUpon>TabNods.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tabs\TabTeachers.cs">
+    <Compile Include="Tabs\TabTeachers\TabTeachers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tabs\TabTeachers.Designer.cs">
+    <Compile Include="Tabs\TabTeachers\TabTeachers.Designer.cs">
       <DependentUpon>TabTeachers.cs</DependentUpon>
     </Compile>
-    <Compile Include="Teacher.cs" />
-    <Compile Include="TeacherBox.cs">
+    <Compile Include="Classes\Teacher.cs" />
+    <Compile Include="Tabs\TabTeachers\TeacherBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="TeacherBox.Designer.cs">
+    <Compile Include="Tabs\TabTeachers\TeacherBox.Designer.cs">
       <DependentUpon>TeacherBox.cs</DependentUpon>
     </Compile>
-    <Compile Include="TeacherTab.cs">
+    <Compile Include="Tabs\TabTeachers\TeacherTab.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="TeacherTab.Designer.cs">
+    <Compile Include="Tabs\TabTeachers\TeacherTab.Designer.cs">
       <DependentUpon>TeacherTab.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ChartTab.resx">
-      <DependentUpon>ChartTab.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CreateTeacherForm.resx">
+    <EmbeddedResource Include="Tabs\TabTeachers\CreateTeacherForm.resx">
       <DependentUpon>CreateTeacherForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CreateStudentForm.resx">
+    <EmbeddedResource Include="Tabs\TabTeachers\CreateStudentForm.resx">
       <DependentUpon>CreateStudentForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
@@ -148,13 +139,13 @@
     <EmbeddedResource Include="Tabs\TabNods.resx">
       <DependentUpon>TabNods.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Tabs\TabTeachers.resx">
+    <EmbeddedResource Include="Tabs\TabTeachers\TabTeachers.resx">
       <DependentUpon>TabTeachers.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TeacherBox.resx">
+    <EmbeddedResource Include="Tabs\TabTeachers\TeacherBox.resx">
       <DependentUpon>TeacherBox.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TeacherTab.resx">
+    <EmbeddedResource Include="Tabs\TabTeachers\TeacherTab.resx">
       <DependentUpon>TeacherTab.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />

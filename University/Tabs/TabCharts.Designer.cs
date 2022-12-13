@@ -34,6 +34,7 @@
             System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.TeachersChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.treeView1 = new System.Windows.Forms.TreeView();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.TeachersChart)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,14 +45,14 @@
             this.TeachersChart.Dock = System.Windows.Forms.DockStyle.Fill;
             legend1.Name = "Legend1";
             this.TeachersChart.Legends.Add(legend1);
-            this.TeachersChart.Location = new System.Drawing.Point(0, 0);
+            this.TeachersChart.Location = new System.Drawing.Point(0, 46);
             this.TeachersChart.Name = "TeachersChart";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
             series1.Legend = "Legend1";
             series1.Name = "Students";
             this.TeachersChart.Series.Add(series1);
-            this.TeachersChart.Size = new System.Drawing.Size(564, 451);
+            this.TeachersChart.Size = new System.Drawing.Size(564, 405);
             this.TeachersChart.TabIndex = 0;
             this.TeachersChart.Text = "chart1";
             title1.Name = "Title1";
@@ -62,11 +63,20 @@
             // treeView1
             // 
             this.treeView1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.treeView1.Location = new System.Drawing.Point(564, 0);
+            this.treeView1.Location = new System.Drawing.Point(564, 46);
             this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(240, 451);
+            this.treeView1.Size = new System.Drawing.Size(240, 405);
             this.treeView1.TabIndex = 2;
             this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(103)))), ((int)(((byte)(166)))));
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(804, 46);
+            this.panel1.TabIndex = 3;
             // 
             // TabCharts
             // 
@@ -76,6 +86,7 @@
             this.ClientSize = new System.Drawing.Size(804, 451);
             this.Controls.Add(this.TeachersChart);
             this.Controls.Add(this.treeView1);
+            this.Controls.Add(this.panel1);
             this.Name = "TabCharts";
             this.Text = "TabCharts";
             ((System.ComponentModel.ISupportInitialize)(this.TeachersChart)).EndInit();
@@ -87,5 +98,6 @@
 
         private System.Windows.Forms.DataVisualization.Charting.Chart TeachersChart;
         private System.Windows.Forms.TreeView treeView1;
+        private System.Windows.Forms.Panel panel1;
     }
 }

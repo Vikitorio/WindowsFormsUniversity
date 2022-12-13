@@ -66,5 +66,15 @@ namespace University
         {
             _mainForm.openNewMenu(new CreateStudentForm(_mainForm , this));
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void teacherName_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

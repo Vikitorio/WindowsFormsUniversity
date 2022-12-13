@@ -46,21 +46,22 @@
             this.humanListBox.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
             this.humanListBox.Name = "humanListBox";
             this.humanListBox.Padding = new System.Windows.Forms.Padding(0, 5, 247, 0);
-            this.humanListBox.Size = new System.Drawing.Size(597, 405);
+            this.humanListBox.Size = new System.Drawing.Size(546, 405);
             this.humanListBox.TabIndex = 10;
             this.humanListBox.WrapContents = false;
             // 
             // createElementForm
             // 
+            this.createElementForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(126)))), ((int)(((byte)(206)))));
             this.createElementForm.Dock = System.Windows.Forms.DockStyle.Right;
-            this.createElementForm.Location = new System.Drawing.Point(597, 46);
+            this.createElementForm.Location = new System.Drawing.Point(546, 46);
             this.createElementForm.Name = "createElementForm";
-            this.createElementForm.Size = new System.Drawing.Size(207, 405);
+            this.createElementForm.Size = new System.Drawing.Size(258, 405);
             this.createElementForm.TabIndex = 8;
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(66)))), ((int)(((byte)(155)))));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(103)))), ((int)(((byte)(166)))));
             this.panel3.Controls.Add(this.CreateDefaultTeacher);
             this.panel3.Controls.Add(this.AddElement);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
@@ -71,10 +72,13 @@
             // 
             // CreateDefaultTeacher
             // 
+            this.CreateDefaultTeacher.Dock = System.Windows.Forms.DockStyle.Left;
+            this.CreateDefaultTeacher.FlatAppearance.BorderSize = 0;
+            this.CreateDefaultTeacher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CreateDefaultTeacher.ForeColor = System.Drawing.Color.White;
-            this.CreateDefaultTeacher.Location = new System.Drawing.Point(139, 12);
+            this.CreateDefaultTeacher.Location = new System.Drawing.Point(130, 0);
             this.CreateDefaultTeacher.Name = "CreateDefaultTeacher";
-            this.CreateDefaultTeacher.Size = new System.Drawing.Size(125, 23);
+            this.CreateDefaultTeacher.Size = new System.Drawing.Size(130, 46);
             this.CreateDefaultTeacher.TabIndex = 1;
             this.CreateDefaultTeacher.Text = "Add Default Teacher";
             this.CreateDefaultTeacher.UseVisualStyleBackColor = true;
@@ -82,10 +86,13 @@
             // 
             // AddElement
             // 
+            this.AddElement.Dock = System.Windows.Forms.DockStyle.Left;
+            this.AddElement.FlatAppearance.BorderSize = 0;
+            this.AddElement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddElement.ForeColor = System.Drawing.Color.White;
-            this.AddElement.Location = new System.Drawing.Point(18, 12);
+            this.AddElement.Location = new System.Drawing.Point(0, 0);
             this.AddElement.Name = "AddElement";
-            this.AddElement.Size = new System.Drawing.Size(115, 23);
+            this.AddElement.Size = new System.Drawing.Size(130, 46);
             this.AddElement.TabIndex = 0;
             this.AddElement.Text = "AddTeacher";
             this.AddElement.UseVisualStyleBackColor = true;

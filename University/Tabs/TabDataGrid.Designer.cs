@@ -34,6 +34,7 @@
             this.Age = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Salary = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Students = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridTeachers)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,9 +48,9 @@
             this.Salary,
             this.Students});
             this.dataGridTeachers.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridTeachers.Location = new System.Drawing.Point(0, 0);
+            this.dataGridTeachers.Location = new System.Drawing.Point(0, 46);
             this.dataGridTeachers.Name = "dataGridTeachers";
-            this.dataGridTeachers.Size = new System.Drawing.Size(800, 450);
+            this.dataGridTeachers.Size = new System.Drawing.Size(800, 404);
             this.dataGridTeachers.TabIndex = 0;
             this.dataGridTeachers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -80,12 +81,22 @@
             this.Students.HeaderText = "Students";
             this.Students.Name = "Students";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(103)))), ((int)(((byte)(166)))));
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(800, 46);
+            this.panel1.TabIndex = 1;
+            // 
             // TabDataGrid
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dataGridTeachers);
+            this.Controls.Add(this.panel1);
             this.Name = "TabDataGrid";
             this.Text = "TabDataGreed";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridTeachers)).EndInit();
@@ -101,5 +112,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Age;
         private System.Windows.Forms.DataGridViewTextBoxColumn Salary;
         private System.Windows.Forms.DataGridViewTextBoxColumn Students;
+        private System.Windows.Forms.Panel panel1;
     }
 }
