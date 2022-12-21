@@ -58,7 +58,6 @@
             title1.Name = "Title1";
             title1.Text = "Count of Students";
             this.TeachersChart.Titles.Add(title1);
-            this.TeachersChart.Click += new System.EventHandler(this.TeachersChart_Click);
             // 
             // treeView1
             // 
@@ -67,7 +66,6 @@
             this.treeView1.Name = "treeView1";
             this.treeView1.Size = new System.Drawing.Size(240, 405);
             this.treeView1.TabIndex = 2;
-            this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
             // 
             // panel1
             // 

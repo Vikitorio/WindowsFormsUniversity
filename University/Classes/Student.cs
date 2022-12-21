@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Xml.Linq;
+using University.Classes;
+using Newtonsoft.Json.Linq;
 
 namespace University
 {
@@ -13,13 +15,16 @@ namespace University
         private int _admissionYear;
         private List<Subject> _subjectSet;
         private List<List<string>> _grades;
+        private CourseWork _courseWork;
 
         public Student() : base()
         {
+            _courseWork = new CourseWork();
             this._admissionYear = 2021;
         }
-        public Student(string name, string surname, int age, Adress adress,int admissionYear) : base(name, surname, age, adress)
+        public Student(string name, string surname, int age, Adress adress,int admissionYear, CourseWork courseWork) : base(name, surname, age, adress)
         {
+            this._courseWork = courseWork;
             this._admissionYear = admissionYear;
         }
 
@@ -29,6 +34,11 @@ namespace University
             string str;
             str = base.dataToStr() + "\n" + "Subject: " + _admissionYear.ToString() + "\n" + "Person Data:";
             return str;
+        }
+        public CourseWork CourseTask
+        {
+            get { return this._courseWork; }
+            set {  this._courseWork = value; }
         }
 
         public int AdmissionYear
@@ -47,6 +57,8 @@ namespace University
             get { return this._grades; }
             set { this._grades = value; }
         }
+        
+
 
     }
 }

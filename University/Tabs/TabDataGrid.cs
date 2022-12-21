@@ -17,9 +17,13 @@ namespace University.Tabs
         public TabDataGrid(MainForm Main)
         {
             _mainForm = Main;
-            _listTeachers = Main.ListTeachers;
+            getCurrentList();
             InitializeComponent();
             fillGridTeachersTable();
+        }
+        public void getCurrentList()
+        {
+            this._listTeachers = _mainForm.ListTeachers;
         }
         public void fillGridTeachersTable() {
             for (int i = 0; i < dataGridTeachers.Columns.Count; i++) {
@@ -28,12 +32,7 @@ namespace University.Tabs
             for (int i = 0; i < _listTeachers.List.Count; i++) {
                 Teacher TempT = _listTeachers.List[i];
                 dataGridTeachers.Rows.Add(TempT.Name ,TempT.Surname, TempT.Age, TempT.salary, TempT.getStudentsStr());
-            }
-            
-        }
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
+            }   
         }
     }
 }

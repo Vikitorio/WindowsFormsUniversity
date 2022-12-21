@@ -28,235 +28,322 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button2 = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateStudentForm));
+            this.house = new System.Windows.Forms.TextBox();
+            this.street = new System.Windows.Forms.TextBox();
+            this.city = new System.Windows.Forms.TextBox();
+            this.country = new System.Windows.Forms.TextBox();
+            this.age = new System.Windows.Forms.TextBox();
+            this.surname = new System.Windows.Forms.TextBox();
+            this.name = new System.Windows.Forms.TextBox();
+            this.admissionYear = new System.Windows.Forms.TextBox();
+            this.deadLine = new System.Windows.Forms.DateTimePicker();
+            this.lable6 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.courseWorkTitle = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label17 = new System.Windows.Forms.Label();
             this.SavePerson = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this._house = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this._street = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this._city = new System.Windows.Forms.TextBox();
-            this.labelC = new System.Windows.Forms.Label();
-            this._country = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this._age = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this._surname = new System.Windows.Forms.TextBox();
-            this.LName = new System.Windows.Forms.Label();
-            this._name = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this._admissionYear = new System.Windows.Forms.TextBox();
+            this.photoBox = new System.Windows.Forms.PictureBox();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.photoBox)).BeginInit();
             this.SuspendLayout();
             // 
-            // button2
+            // house
             // 
-            this.button2.Location = new System.Drawing.Point(12, 270);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(172, 32);
-            this.button2.TabIndex = 35;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.house.Location = new System.Drawing.Point(106, 302);
+            this.house.Name = "house";
+            this.house.Size = new System.Drawing.Size(116, 20);
+            this.house.TabIndex = 31;
+            // 
+            // street
+            // 
+            this.street.Location = new System.Drawing.Point(106, 276);
+            this.street.Name = "street";
+            this.street.Size = new System.Drawing.Size(116, 20);
+            this.street.TabIndex = 29;
+            // 
+            // city
+            // 
+            this.city.Location = new System.Drawing.Point(106, 250);
+            this.city.Name = "city";
+            this.city.Size = new System.Drawing.Size(116, 20);
+            this.city.TabIndex = 27;
+            // 
+            // country
+            // 
+            this.country.Location = new System.Drawing.Point(106, 224);
+            this.country.Name = "country";
+            this.country.Size = new System.Drawing.Size(116, 20);
+            this.country.TabIndex = 24;
+            // 
+            // age
+            // 
+            this.age.Location = new System.Drawing.Point(106, 72);
+            this.age.Name = "age";
+            this.age.Size = new System.Drawing.Size(116, 20);
+            this.age.TabIndex = 21;
+            // 
+            // surname
+            // 
+            this.surname.Location = new System.Drawing.Point(106, 46);
+            this.surname.Name = "surname";
+            this.surname.Size = new System.Drawing.Size(116, 20);
+            this.surname.TabIndex = 19;
+            // 
+            // name
+            // 
+            this.name.Location = new System.Drawing.Point(106, 20);
+            this.name.Name = "name";
+            this.name.Size = new System.Drawing.Size(116, 20);
+            this.name.TabIndex = 17;
+            // 
+            // admissionYear
+            // 
+            this.admissionYear.Location = new System.Drawing.Point(106, 101);
+            this.admissionYear.Name = "admissionYear";
+            this.admissionYear.Size = new System.Drawing.Size(116, 20);
+            this.admissionYear.TabIndex = 36;
+            // 
+            // deadLine
+            // 
+            this.deadLine.Location = new System.Drawing.Point(106, 165);
+            this.deadLine.Name = "deadLine";
+            this.deadLine.Size = new System.Drawing.Size(116, 20);
+            this.deadLine.TabIndex = 40;
+            // 
+            // lable6
+            // 
+            this.lable6.AutoSize = true;
+            this.lable6.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lable6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(58)))), ((int)(((byte)(116)))));
+            this.lable6.Location = new System.Drawing.Point(1, 164);
+            this.lable6.Name = "lable6";
+            this.lable6.Size = new System.Drawing.Size(109, 22);
+            this.lable6.TabIndex = 41;
+            this.lable6.Text = "Dead Line";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(58)))), ((int)(((byte)(116)))));
+            this.label3.Location = new System.Drawing.Point(2, 120);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(88, 36);
+            this.label3.TabIndex = 39;
+            this.label3.Text = "Course \r\nWork Title";
+            // 
+            // courseWorkTitle
+            // 
+            this.courseWorkTitle.Location = new System.Drawing.Point(106, 130);
+            this.courseWorkTitle.Name = "courseWorkTitle";
+            this.courseWorkTitle.Size = new System.Drawing.Size(116, 20);
+            this.courseWorkTitle.TabIndex = 38;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(58)))), ((int)(((byte)(116)))));
+            this.label6.Location = new System.Drawing.Point(2, 16);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(67, 22);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Name";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(58)))), ((int)(((byte)(116)))));
+            this.label7.Location = new System.Drawing.Point(1, 98);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(72, 22);
+            this.label7.TabIndex = 27;
+            this.label7.Text = "Salary";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(58)))), ((int)(((byte)(116)))));
+            this.label11.Location = new System.Drawing.Point(54, 188);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(94, 29);
+            this.label11.TabIndex = 14;
+            this.label11.Text = "Adress";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(58)))), ((int)(((byte)(116)))));
+            this.label12.Location = new System.Drawing.Point(4, 298);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(72, 22);
+            this.label12.TabIndex = 13;
+            this.label12.Text = "House";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(58)))), ((int)(((byte)(116)))));
+            this.label13.Location = new System.Drawing.Point(4, 272);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(68, 22);
+            this.label13.TabIndex = 11;
+            this.label13.Text = "Street";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(58)))), ((int)(((byte)(116)))));
+            this.label14.Location = new System.Drawing.Point(4, 246);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(50, 22);
+            this.label14.TabIndex = 9;
+            this.label14.Text = "City";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(58)))), ((int)(((byte)(116)))));
+            this.label15.Location = new System.Drawing.Point(4, 220);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(91, 22);
+            this.label15.TabIndex = 7;
+            this.label15.Text = "Country";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(58)))), ((int)(((byte)(116)))));
+            this.label16.Location = new System.Drawing.Point(2, 46);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(98, 22);
+            this.label16.TabIndex = 3;
+            this.label16.Text = "Surname";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.deadLine);
+            this.panel1.Controls.Add(this.label12);
+            this.panel1.Controls.Add(this.lable6);
+            this.panel1.Controls.Add(this.label13);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.courseWorkTitle);
+            this.panel1.Controls.Add(this.label14);
+            this.panel1.Controls.Add(this.label15);
+            this.panel1.Controls.Add(this.label16);
+            this.panel1.Controls.Add(this.label17);
+            this.panel1.Controls.Add(this.admissionYear);
+            this.panel1.Controls.Add(this.name);
+            this.panel1.Controls.Add(this.surname);
+            this.panel1.Controls.Add(this.age);
+            this.panel1.Controls.Add(this.country);
+            this.panel1.Controls.Add(this.house);
+            this.panel1.Controls.Add(this.city);
+            this.panel1.Controls.Add(this.street);
+            this.panel1.Location = new System.Drawing.Point(12, 101);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(234, 328);
+            this.panel1.TabIndex = 45;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(58)))), ((int)(((byte)(116)))));
+            this.label17.Location = new System.Drawing.Point(2, 72);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(47, 22);
+            this.label17.TabIndex = 5;
+            this.label17.Text = "Age";
             // 
             // SavePerson
             // 
-            this.SavePerson.Location = new System.Drawing.Point(12, 317);
+            this.SavePerson.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(103)))), ((int)(((byte)(166)))));
+            this.SavePerson.FlatAppearance.BorderSize = 0;
+            this.SavePerson.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SavePerson.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SavePerson.ForeColor = System.Drawing.Color.White;
+            this.SavePerson.Location = new System.Drawing.Point(12, 435);
             this.SavePerson.Name = "SavePerson";
-            this.SavePerson.Size = new System.Drawing.Size(172, 31);
-            this.SavePerson.TabIndex = 34;
+            this.SavePerson.Size = new System.Drawing.Size(234, 41);
+            this.SavePerson.TabIndex = 43;
             this.SavePerson.Text = "Save";
-            this.SavePerson.UseVisualStyleBackColor = true;
+            this.SavePerson.UseVisualStyleBackColor = false;
             this.SavePerson.Click += new System.EventHandler(this.SavePerson_Click);
             // 
-            // label4
+            // photoBox
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(8, 123);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 20);
-            this.label4.TabIndex = 33;
-            this.label4.Text = "Adress";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(9, 227);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(38, 13);
-            this.label10.TabIndex = 32;
-            this.label10.Text = "House";
-            // 
-            // _house
-            // 
-            this._house.Location = new System.Drawing.Point(94, 227);
-            this._house.Name = "_house";
-            this._house.Size = new System.Drawing.Size(116, 20);
-            this._house.TabIndex = 31;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(9, 201);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(35, 13);
-            this.label9.TabIndex = 30;
-            this.label9.Text = "Street";
-            // 
-            // _street
-            // 
-            this._street.Location = new System.Drawing.Point(94, 201);
-            this._street.Name = "_street";
-            this._street.Size = new System.Drawing.Size(116, 20);
-            this._street.TabIndex = 29;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(9, 175);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(24, 13);
-            this.label8.TabIndex = 28;
-            this.label8.Text = "City";
-            // 
-            // _city
-            // 
-            this._city.Location = new System.Drawing.Point(94, 175);
-            this._city.Name = "_city";
-            this._city.Size = new System.Drawing.Size(116, 20);
-            this._city.TabIndex = 27;
-            // 
-            // labelC
-            // 
-            this.labelC.AutoSize = true;
-            this.labelC.Location = new System.Drawing.Point(9, 149);
-            this.labelC.Name = "labelC";
-            this.labelC.Size = new System.Drawing.Size(43, 13);
-            this.labelC.TabIndex = 26;
-            this.labelC.Text = "Country";
-            // 
-            // _country
-            // 
-            this._country.Location = new System.Drawing.Point(94, 149);
-            this._country.Name = "_country";
-            this._country.Size = new System.Drawing.Size(116, 20);
-            this._country.TabIndex = 24;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 71);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(26, 13);
-            this.label2.TabIndex = 22;
-            this.label2.Text = "Age";
-            // 
-            // _age
-            // 
-            this._age.Location = new System.Drawing.Point(94, 71);
-            this._age.Name = "_age";
-            this._age.Size = new System.Drawing.Size(116, 20);
-            this._age.TabIndex = 21;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 45);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 13);
-            this.label1.TabIndex = 20;
-            this.label1.Text = "Surname";
-            // 
-            // _surname
-            // 
-            this._surname.Location = new System.Drawing.Point(94, 45);
-            this._surname.Name = "_surname";
-            this._surname.Size = new System.Drawing.Size(116, 20);
-            this._surname.TabIndex = 19;
-            // 
-            // LName
-            // 
-            this.LName.AutoSize = true;
-            this.LName.Location = new System.Drawing.Point(12, 19);
-            this.LName.Name = "LName";
-            this.LName.Size = new System.Drawing.Size(35, 13);
-            this.LName.TabIndex = 18;
-            this.LName.Text = "Name";
-            // 
-            // _name
-            // 
-            this._name.Location = new System.Drawing.Point(94, 19);
-            this._name.Name = "_name";
-            this._name.Size = new System.Drawing.Size(116, 20);
-            this._name.TabIndex = 17;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(9, 103);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(79, 13);
-            this.label5.TabIndex = 37;
-            this.label5.Text = "Admission Year";
-            // 
-            // _admissionYear
-            // 
-            this._admissionYear.Location = new System.Drawing.Point(94, 100);
-            this._admissionYear.Name = "_admissionYear";
-            this._admissionYear.Size = new System.Drawing.Size(116, 20);
-            this._admissionYear.TabIndex = 36;
+            this.photoBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(103)))), ((int)(((byte)(166)))));
+            this.photoBox.Image = ((System.Drawing.Image)(resources.GetObject("photoBox.Image")));
+            this.photoBox.Location = new System.Drawing.Point(12, 10);
+            this.photoBox.Name = "photoBox";
+            this.photoBox.Size = new System.Drawing.Size(85, 85);
+            this.photoBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.photoBox.TabIndex = 44;
+            this.photoBox.TabStop = false;
+            this.photoBox.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // CreateStudentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(292, 412);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this._admissionYear);
-            this.Controls.Add(this.button2);
+            this.ClientSize = new System.Drawing.Size(251, 539);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.SavePerson);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this._house);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this._street);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this._city);
-            this.Controls.Add(this.labelC);
-            this.Controls.Add(this._country);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this._age);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this._surname);
-            this.Controls.Add(this.LName);
-            this.Controls.Add(this._name);
+            this.Controls.Add(this.photoBox);
             this.Name = "CreateStudentForm";
             this.Text = "Form1";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.photoBox)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox house;
+        private System.Windows.Forms.TextBox street;
+        private System.Windows.Forms.TextBox city;
+        private System.Windows.Forms.TextBox country;
+        private System.Windows.Forms.TextBox age;
+        private System.Windows.Forms.TextBox surname;
+        private System.Windows.Forms.TextBox name;
+        private System.Windows.Forms.TextBox admissionYear;
+        private System.Windows.Forms.DateTimePicker deadLine;
+        private System.Windows.Forms.Label lable6;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox courseWorkTitle;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Button SavePerson;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox _house;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox _street;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox _city;
-        private System.Windows.Forms.Label labelC;
-        private System.Windows.Forms.TextBox _country;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox _age;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox _surname;
-        private System.Windows.Forms.Label LName;
-        private System.Windows.Forms.TextBox _name;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox _admissionYear;
+        private System.Windows.Forms.PictureBox photoBox;
     }
 }

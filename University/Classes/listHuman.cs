@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using Newtonsoft.Json;
 
 
@@ -59,20 +61,36 @@ namespace University
                 listData += listHumans[i].dataToStr();
             return listData;
         }
-       /* public void WriteToJson(string fileLink)
+        /*public void WriteToJson()
         {
-            List<Human> list = this.listHumans;
-            string JsonData = JsonConvert.SerializeObject(list);
-            File.WriteAllText(fileLink, JsonData);
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            saveFileDialog1.Filter = "Json files (*.json)|*.json";
+            saveFileDialog1.Title = "Save";
+            saveFileDialog1.ShowDialog();
+
+            if (saveFileDialog1.FileName != "")
+            {
+                List<Human> list = this.listHumans;
+                string JsonData = JsonConvert.SerializeObject(list);
+                File.WriteAllText(saveFileDialog1.FileName, JsonData);
+            }
 
         }
-       */
-       /* public void readFromJson(string fileLink)
+       
+        public void readFromJson()
         {
-            string jsonData = File.ReadAllText(fileLink);
-            this.listHumans = JsonConvert.DeserializeObject<List<Human>>(jsonData);
+            OpenFileDialog openFileDialog1 = new OpenFileDialog();
+            openFileDialog1.Filter = "Json files (*.json)|*.json";
+            openFileDialog1.Title = "Save";
+            openFileDialog1.ShowDialog();
+            if (openFileDialog1.FileName != "")
+            {
+                string jsonData = File.ReadAllText(openFileDialog1.FileName);
+                this.listHumans = JsonConvert.DeserializeObject<List<Human>>(jsonData);
+            }
         }
-       */
+        */
+       
         public void sortByAgeLowToHigh()
         {
             List<Human> list = listHumans;

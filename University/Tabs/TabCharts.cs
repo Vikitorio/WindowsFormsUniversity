@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 using System.Windows.Forms.VisualStyles;
+using University.Classes;
 
 namespace University.Tabs
 {
@@ -20,11 +21,14 @@ namespace University.Tabs
         public TabCharts(MainForm Main)
         {
             _mainForm = Main;
-            _listTeacher = Main.ListTeachers;
-
+            getCurrentList();
             InitializeComponent();
             fillCharts();
             fillNods();
+        }
+        public void getCurrentList()
+        {
+            this._listTeacher = _mainForm.ListTeachers;
         }
         public void fillCharts() {
             listTeacher List = _mainForm.getListTeacher();
@@ -41,19 +45,16 @@ namespace University.Tabs
                    
                 for (int j = 0; j < _listTeacher.List[i].Students.Count(); j++)
                         {
-                    treeView1.Nodes[i].Nodes.Add(_listTeacher.List[i].Students[j].Name);
+                    String strStudent = _listTeacher.List[i].Students[j].Name +" "+ _listTeacher.List[i].Students[j].Surname;
+                    treeView1.Nodes[i].Nodes.Add(strStudent);
+                    String courseTitle = _listTeacher.List[i].Students[j].CourseTask.Title;
+                    String courseDeadLine = _listTeacher.List[i].Students[j].CourseTask.DeadLine.ToString();
+                    treeView1.Nodes[i].Nodes[j].Nodes.Add(courseTitle +" - "+ courseDeadLine);
+                    if(_listTeacher.List[i].Students[j].CourseTask.DeadLine < DateTime.Now)
+                        treeView1.Nodes[i].Nodes[j].Nodes[0].BackColor = Color.Red;
                         }
 
             }
-        }
-        private void TeachersChart_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
-        {
-
         }
     }
 }

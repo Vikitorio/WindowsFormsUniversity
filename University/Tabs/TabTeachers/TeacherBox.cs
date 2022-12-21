@@ -28,12 +28,14 @@ namespace University
         {
             this._mainForm = mainForm;
             this._teacher = teacher;
-            this._teacherName = _teacher.Name + _teacher.Surname;
+            this._teacherName = _teacher.Name + " " +_teacher.Surname;
+            
             InitializeComponent();
             setTeacherBoxInfo();
         }
         public void setTeacherBoxInfo() {
             this.teacherName.Text = this._teacherName;
+            photoBox.ImageLocation = _teacher.Photo;
         }
 
         public string NameSurname 
@@ -75,6 +77,16 @@ namespace University
         private void teacherName_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void _photoBox_Click(object sender, EventArgs e)
+        {
+            string photoSrc = "";
+            OpenFileDialog dialog = new OpenFileDialog();
+            dialog.Filter = "jpg files(*.jpg)|*.jpg| PNG files(*.png)|*.png| All Files(*.*)|*.*";
+            dialog.ShowDialog();
+            photoSrc = dialog.FileName;
+            photoBox.ImageLocation = photoSrc;
         }
     }
 }

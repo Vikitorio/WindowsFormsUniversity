@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Adress.cs" />
+    <Compile Include="Classes\CourseWork.cs" />
     <Compile Include="Tabs\TabTeachers\CreateTeacherForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,12 +87,6 @@
     </Compile>
     <Compile Include="Tabs\TabDataGrid.Designer.cs">
       <DependentUpon>TabDataGrid.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Tabs\TabNods.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Tabs\TabNods.Designer.cs">
-      <DependentUpon>TabNods.cs</DependentUpon>
     </Compile>
     <Compile Include="Tabs\TabTeachers\TabTeachers.cs">
       <SubType>Form</SubType>
@@ -129,15 +124,13 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Tabs\TabCharts.resx">
       <DependentUpon>TabCharts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tabs\TabDataGrid.resx">
       <DependentUpon>TabDataGrid.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Tabs\TabNods.resx">
-      <DependentUpon>TabNods.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tabs\TabTeachers\TabTeachers.resx">
       <DependentUpon>TabTeachers.cs</DependentUpon>
@@ -161,6 +154,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\default-teacher-icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

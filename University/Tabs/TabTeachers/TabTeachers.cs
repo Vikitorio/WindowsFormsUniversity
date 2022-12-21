@@ -19,13 +19,15 @@ namespace University.Tabs
         public TabTeachers(MainForm MForm)
         {
             Main = MForm;
-            this._listTeacher = Main.ListTeachers;
+            getCurrentList();
             _createElementForm = this.createElementForm;
             InitializeComponent();
             showTeachers();
         }
-     
-   
+
+        public void getCurrentList() {
+            this._listTeacher = Main.ListTeachers;
+        }
 
         public void showTeachers()
         {
@@ -54,55 +56,53 @@ namespace University.Tabs
             newForm.Show();
 
         }
+        public void SendDataToMain() {
+            Main.ListTeachers = this._listTeacher;
+        }
         private void CreateDefaultTeacher_Click(object sender, EventArgs e)
         {
             Teacher first = new Teacher("Vasilii", "Procopenco", 44, new Adress(), 10000);
-            first.AddStudent(new Student());
-            first.AddStudent(new Student());
-            first.AddStudent(new Student());
-            Teacher second = new Teacher("Viktor", "Barashkov", 41, new Adress(), 10000);
-            second.AddStudent(new Student());
-            second.AddStudent(new Student());
-            second.AddStudent(new Student());
-            Teacher third = new Teacher("Genady", "semchenko", 41, new Adress(), 10000);
-            third.AddStudent(new Student());
-            third.AddStudent(new Student());
-            third.AddStudent(new Student());
+            Classes.CourseWork cours1 = new Classes.CourseWork("Philosophi",DateTime.Now,new DateTime(2023,01,18));
+            first.AddStudent(new Student("Viktor","Xzkov",22,new Adress(),2021,cours1));
+            first.AddStudent(new Student("Mikhail", "Dzerzinski", 22, new Adress(), 2021, cours1));
+            Teacher second = new Teacher("Sveta", "Kobleva", 41, new Adress(), 10000);
+            Classes.CourseWork cours2 = new Classes.CourseWork("Math", DateTime.Now, new DateTime(2024, 01, 18));
+            second.AddStudent(new Student("Oleg", "Rice", 22, new Adress(), 2021, cours2));
+            second.AddStudent(new Student("Dima", "Zuker", 22, new Adress(), 2021, cours2));
+            second.AddStudent(new Student("Sophia", "Xzkov", 22, new Adress(), 2021, cours2));
+            Teacher third = new Teacher("Genady", "Semchenko", 41, new Adress(), 10000);
+            Classes.CourseWork cours3 = new Classes.CourseWork("Literatura", DateTime.Now, new DateTime(2023, 01, 18));
+            third.AddStudent(new Student("Mikola", "Bahov", 22, new Adress(), 2021, cours3));
+            third.AddStudent(new Student("Ivan", "Dorn", 22, new Adress(), 2021, cours3));
+            third.AddStudent(new Student("Evgeniy", "Sitsun", 22, new Adress(), 2021, cours3));
             _listTeacher.addNewTeacher(first);
             _listTeacher.addNewTeacher(second);
             _listTeacher.addNewTeacher(third);
             showTeachers();
+            SendDataToMain();
         }
         private void AddElement_Click(object sender, EventArgs e)
         {
-
             openNewMenu(new CreateTeacherForm(this));
-
         }
-
-        private void AddElement_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void humanListBox_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void createElementForm_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void TabTeachers_Close(object sender, FormClosingEventArgs e)
         {
-            Main.ListTeachers = this._listTeacher;
+            SendDataToMain();
+        }
+
+        private void sendData(object sender, ControlEventArgs e)
+        {
+            SendDataToMain();
+        }
+
+        private void saveData_Click(object sender, EventArgs e)
+        {
+            _listTeacher.WriteToJson();
+        }
+        private void loadData_Click(object sender, EventArgs e)
+        {
+            _listTeacher.readFromJson();
+            showTeachers();
         }
     }
 }

@@ -29,24 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TeacherBox));
             this.teacherName = new System.Windows.Forms.Label();
             this.showList = new System.Windows.Forms.Button();
             this.addStudent = new System.Windows.Forms.Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.photoBox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.photoBox)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.pictureBox1.Location = new System.Drawing.Point(16, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(82, 82);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // teacherName
             // 
@@ -97,30 +87,42 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
+            // photoBox
+            // 
+            this.photoBox.ErrorImage = ((System.Drawing.Image)(resources.GetObject("photoBox.ErrorImage")));
+            this.photoBox.Image = ((System.Drawing.Image)(resources.GetObject("photoBox.Image")));
+            this.photoBox.InitialImage = ((System.Drawing.Image)(resources.GetObject("photoBox.InitialImage")));
+            this.photoBox.Location = new System.Drawing.Point(8, 12);
+            this.photoBox.Name = "photoBox";
+            this.photoBox.Size = new System.Drawing.Size(90, 90);
+            this.photoBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.photoBox.TabIndex = 4;
+            this.photoBox.TabStop = false;
+            this.photoBox.Click += new System.EventHandler(this._photoBox_Click);
+            // 
             // TeacherBox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.Controls.Add(this.photoBox);
             this.Controls.Add(this.addStudent);
             this.Controls.Add(this.showList);
             this.Controls.Add(this.teacherName);
-            this.Controls.Add(this.pictureBox1);
             this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 3);
             this.Name = "TeacherBox";
             this.Size = new System.Drawing.Size(355, 108);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.photoBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label teacherName;
         private System.Windows.Forms.Button showList;
         private System.Windows.Forms.Button addStudent;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.PictureBox photoBox;
     }
 }

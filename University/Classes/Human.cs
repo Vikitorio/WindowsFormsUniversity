@@ -13,6 +13,7 @@ namespace University
         protected string _surname;
         protected int _age;
         protected Adress _adress;
+        protected string _photo = "";
 
         public Human()
         {
@@ -82,6 +83,11 @@ namespace University
         {
             get { return _age; }
             set { _age = value; }
+        }
+        public string Photo
+        {
+            get { return _photo; }
+            set { _photo = value; }
         }
     }
 }

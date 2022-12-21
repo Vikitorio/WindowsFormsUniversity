@@ -49,6 +49,7 @@
             this.humanListBox.Size = new System.Drawing.Size(546, 405);
             this.humanListBox.TabIndex = 10;
             this.humanListBox.WrapContents = false;
+            this.humanListBox.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.sendData);
             // 
             // createElementForm
             // 

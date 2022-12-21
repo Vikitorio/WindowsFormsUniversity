@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.dataGridTeachers = new System.Windows.Forms.DataGridView();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.NameT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Surname = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Age = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Salary = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Students = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridTeachers)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,7 +52,15 @@
             this.dataGridTeachers.Name = "dataGridTeachers";
             this.dataGridTeachers.Size = new System.Drawing.Size(800, 404);
             this.dataGridTeachers.TabIndex = 0;
-            this.dataGridTeachers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(103)))), ((int)(((byte)(166)))));
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(800, 46);
+            this.panel1.TabIndex = 1;
             // 
             // NameT
             // 
@@ -80,15 +88,7 @@
             // 
             this.Students.HeaderText = "Students";
             this.Students.Name = "Students";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(103)))), ((int)(((byte)(166)))));
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 46);
-            this.panel1.TabIndex = 1;
+            this.Students.Width = 300;
             // 
             // TabDataGrid
             // 
@@ -107,11 +107,11 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridTeachers;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridViewTextBoxColumn NameT;
         private System.Windows.Forms.DataGridViewTextBoxColumn Surname;
         private System.Windows.Forms.DataGridViewTextBoxColumn Age;
         private System.Windows.Forms.DataGridViewTextBoxColumn Salary;
         private System.Windows.Forms.DataGridViewTextBoxColumn Students;
-        private System.Windows.Forms.Panel panel1;
     }
 }
