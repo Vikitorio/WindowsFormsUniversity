@@ -17,23 +17,17 @@ namespace University.Tabs
     public partial class TabCharts : Form
     {
         private MainForm _mainForm;
-        private listTeacher _listTeacher;
+        private listTeacher _listTeacher = listTeacher.GetInstance();
         public TabCharts(MainForm Main)
         {
             _mainForm = Main;
-            getCurrentList();
             InitializeComponent();
             fillCharts();
             fillNods();
         }
-        public void getCurrentList()
-        {
-            this._listTeacher = _mainForm.ListTeachers;
-        }
         public void fillCharts() {
-            listTeacher List = _mainForm.getListTeacher();
-            for (int i = 0; i < List.List.Count(); i++) {
-                TeachersChart.Series["Students"].Points.AddXY(List.List[i].Name, List.List[i].Students.Count());
+            for (int i = 0; i < _listTeacher.List.Count(); i++) {
+                TeachersChart.Series["Students"].Points.AddXY(_listTeacher.List[i].Name, _listTeacher.List[i].Students.Count());
 
             }
         }

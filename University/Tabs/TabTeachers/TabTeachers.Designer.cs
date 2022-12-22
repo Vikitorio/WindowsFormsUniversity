@@ -49,7 +49,6 @@
             this.humanListBox.Size = new System.Drawing.Size(546, 405);
             this.humanListBox.TabIndex = 10;
             this.humanListBox.WrapContents = false;
-            this.humanListBox.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.sendData);
             // 
             // createElementForm
             // 
@@ -109,7 +108,6 @@
             this.Controls.Add(this.panel3);
             this.Name = "TabTeachers";
             this.Text = "TabTeachers";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.TabTeachers_Close);
             this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 

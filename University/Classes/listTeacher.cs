@@ -9,14 +9,24 @@ using Newtonsoft.Json;
 
 namespace University
 {
-    public class listTeacher : listHuman
+    public sealed class listTeacher : listHuman
     {
         private List<Teacher> _listTeachers;
 
-        public listTeacher()
+        private  listTeacher()
         {
             _listTeachers = new List<Teacher>();
         }
+        private static listTeacher _instance;
+        public static listTeacher GetInstance()
+        {
+            if (_instance == null)
+            {
+                _instance = new listTeacher();
+            }
+            return _instance;
+        }
+
         public void addNewTeacher(Teacher teacher)
         {
             _listTeachers.Add(teacher);

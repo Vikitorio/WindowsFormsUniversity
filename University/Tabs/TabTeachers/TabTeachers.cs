@@ -15,18 +15,13 @@ namespace University.Tabs
         private MainForm Main;
         public Panel _createElementForm;
         public Form _activeForm;
-        public listTeacher _listTeacher = new listTeacher();
-        public TabTeachers(MainForm MForm)
+        public listTeacher _listTeacher = listTeacher.GetInstance();
+        public TabTeachers(MainForm MainForm)
         {
-            Main = MForm;
-            getCurrentList();
+            Main = MainForm;
             _createElementForm = this.createElementForm;
             InitializeComponent();
             showTeachers();
-        }
-
-        public void getCurrentList() {
-            this._listTeacher = Main.ListTeachers;
         }
 
         public void showTeachers()
@@ -56,9 +51,6 @@ namespace University.Tabs
             newForm.Show();
 
         }
-        public void SendDataToMain() {
-            Main.ListTeachers = this._listTeacher;
-        }
         private void CreateDefaultTeacher_Click(object sender, EventArgs e)
         {
             Teacher first = new Teacher("Vasilii", "Procopenco", 44, new Adress(), 10000);
@@ -79,20 +71,10 @@ namespace University.Tabs
             _listTeacher.addNewTeacher(second);
             _listTeacher.addNewTeacher(third);
             showTeachers();
-            SendDataToMain();
         }
         private void AddElement_Click(object sender, EventArgs e)
         {
             openNewMenu(new CreateTeacherForm(this));
-        }
-        private void TabTeachers_Close(object sender, FormClosingEventArgs e)
-        {
-            SendDataToMain();
-        }
-
-        private void sendData(object sender, ControlEventArgs e)
-        {
-            SendDataToMain();
         }
 
         private void saveData_Click(object sender, EventArgs e)

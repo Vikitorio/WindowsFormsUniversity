@@ -12,43 +12,43 @@ namespace University
 {
     public class listHuman
     {
-        private List<Human> listHumans;
+        private List<Human> _listHumans;
 
         public listHuman()
         {
-            listHumans = new List<Human>();
+            _listHumans = new List<Human>();
         }
 
         public void AddHuman(Human a)
         {
-            listHumans.Add(a);
+            _listHumans.Add(a);
         }
         public void printHumans()
         {
-            for (int i = 0; i < listHumans.Count(); i++)
+            for (int i = 0; i < _listHumans.Count(); i++)
             {
-                listHumans[i].printInfo();
+                _listHumans[i].printInfo();
                 Console.WriteLine("________________________________");
             }
         }
         public void printObjByName(string name)
         {
-            for (int i = 0; i < listHumans.Count(); i++)
+            for (int i = 0; i < _listHumans.Count(); i++)
             {
-                if (listHumans[i].Name == name)
+                if (_listHumans[i].Name == name)
                 {
-                    listHumans[i].printInfo();
+                    _listHumans[i].printInfo();
                 }
 
             }
         }
         public void changeObjByName(string name)
         {
-            for (int i = 0; i < listHumans.Count(); i++)
+            for (int i = 0; i < _listHumans.Count(); i++)
             {
-                if (listHumans[i].Name == name)
+                if (_listHumans[i].Name == name)
                 {
-                    listHumans[i].changeInfo();
+                    _listHumans[i].changeInfo();
                 }
 
             }
@@ -57,8 +57,8 @@ namespace University
         public string showListStr()
         {
             string listData = "";
-            for (int i = 0; i < listHumans.Count(); i++)
-                listData += listHumans[i].dataToStr();
+            for (int i = 0; i < _listHumans.Count(); i++)
+                listData += _listHumans[i].dataToStr();
             return listData;
         }
         /*public void WriteToJson()
@@ -70,7 +70,7 @@ namespace University
 
             if (saveFileDialog1.FileName != "")
             {
-                List<Human> list = this.listHumans;
+                List<Human> list = this._listHumans;
                 string JsonData = JsonConvert.SerializeObject(list);
                 File.WriteAllText(saveFileDialog1.FileName, JsonData);
             }
@@ -86,14 +86,14 @@ namespace University
             if (openFileDialog1.FileName != "")
             {
                 string jsonData = File.ReadAllText(openFileDialog1.FileName);
-                this.listHumans = JsonConvert.DeserializeObject<List<Human>>(jsonData);
+                this._listHumans = JsonConvert.DeserializeObject<List<Human>>(jsonData);
             }
         }
         */
        
         public void sortByAgeLowToHigh()
         {
-            List<Human> list = listHumans;
+            List<Human> list = _listHumans;
             Human temp;
             for (int i = 1; i < list.Count(); i++)
             {
@@ -110,7 +110,7 @@ namespace University
         }
         public void sortByAgeHightToLow()
         {
-            List<Human> list = listHumans;
+            List<Human> list = _listHumans;
             Human temp;
             for (int i = 1; i < list.Count(); i++)
             {
@@ -128,8 +128,8 @@ namespace University
 
         public List<Human> List
         {
-            get { return listHumans; }
-            set { this.listHumans = value; }
+            get { return _listHumans; }
+            set { this._listHumans = value; }
         }
     }
 

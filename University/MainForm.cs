@@ -15,15 +15,12 @@ namespace University
     {
         private Form _currentTab;
         private Button _currentButton;
-        private listTeacher _listTeacher = new listTeacher();
+        private listTeacher _listTeacher = listTeacher.GetInstance();
         private TabTeachers _tabTeachers;
         public MainForm()
         {
             InitializeComponent();
             openTab(new TabTeachers(this), BtnTeachers);
-        }
-        public listTeacher getListTeacher() {
-            return this._listTeacher;
         }
         public void openTab(Form newTab , Object button) {
             
@@ -55,7 +52,6 @@ namespace University
         private void SaveData_Click(object sender, EventArgs e)
         {
             _listTeacher.WriteToJson();
-   
         }
         private void LoadData_Click(object sender, EventArgs e)
         {

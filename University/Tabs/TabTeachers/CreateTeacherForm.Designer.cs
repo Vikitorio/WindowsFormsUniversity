@@ -59,7 +59,6 @@
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(116, 20);
             this.name.TabIndex = 0;
-            this.name.TextChanged += new System.EventHandler(this._name_TextChanged);
             // 
             // LName
             // 
@@ -71,7 +70,6 @@
             this.LName.Size = new System.Drawing.Size(67, 22);
             this.LName.TabIndex = 1;
             this.LName.Text = "Name";
-            this.LName.Click += new System.EventHandler(this.LName_Click);
             // 
             // label1
             // 
@@ -83,7 +81,6 @@
             this.label1.Size = new System.Drawing.Size(98, 22);
             this.label1.TabIndex = 3;
             this.label1.Text = "Surname";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // surname
             // 
@@ -91,7 +88,6 @@
             this.surname.Name = "surname";
             this.surname.Size = new System.Drawing.Size(116, 20);
             this.surname.TabIndex = 2;
-            this.surname.TextChanged += new System.EventHandler(this._surname_TextChanged);
             // 
             // label2
             // 
@@ -103,7 +99,6 @@
             this.label2.Size = new System.Drawing.Size(47, 22);
             this.label2.TabIndex = 5;
             this.label2.Text = "Age";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // age
             // 
@@ -111,7 +106,6 @@
             this.age.Name = "age";
             this.age.Size = new System.Drawing.Size(116, 20);
             this.age.TabIndex = 4;
-            this.age.TextChanged += new System.EventHandler(this._age_TextChanged);
             // 
             // country
             // 
@@ -119,7 +113,6 @@
             this.country.Name = "country";
             this.country.Size = new System.Drawing.Size(116, 20);
             this.country.TabIndex = 6;
-            this.country.TextChanged += new System.EventHandler(this._country_TextChanged);
             // 
             // labelC
             // 
@@ -131,7 +124,6 @@
             this.labelC.Size = new System.Drawing.Size(91, 22);
             this.labelC.TabIndex = 7;
             this.labelC.Text = "Country";
-            this.labelC.Click += new System.EventHandler(this.labelC_Click);
             // 
             // city
             // 
@@ -139,7 +131,6 @@
             this.city.Name = "city";
             this.city.Size = new System.Drawing.Size(116, 20);
             this.city.TabIndex = 8;
-            this.city.TextChanged += new System.EventHandler(this._city_TextChanged);
             // 
             // label8
             // 
@@ -151,7 +142,6 @@
             this.label8.Size = new System.Drawing.Size(50, 22);
             this.label8.TabIndex = 9;
             this.label8.Text = "City";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // street
             // 
@@ -159,7 +149,6 @@
             this.street.Name = "street";
             this.street.Size = new System.Drawing.Size(116, 20);
             this.street.TabIndex = 10;
-            this.street.TextChanged += new System.EventHandler(this._street_TextChanged);
             // 
             // label9
             // 
@@ -171,7 +160,6 @@
             this.label9.Size = new System.Drawing.Size(68, 22);
             this.label9.TabIndex = 11;
             this.label9.Text = "Street";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // house
             // 
@@ -179,7 +167,6 @@
             this.house.Name = "house";
             this.house.Size = new System.Drawing.Size(116, 20);
             this.house.TabIndex = 12;
-            this.house.TextChanged += new System.EventHandler(this._house_TextChanged);
             // 
             // label10
             // 
@@ -191,7 +178,6 @@
             this.label10.Size = new System.Drawing.Size(72, 22);
             this.label10.TabIndex = 13;
             this.label10.Text = "House";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label4
             // 
@@ -203,7 +189,6 @@
             this.label4.Size = new System.Drawing.Size(94, 29);
             this.label4.TabIndex = 14;
             this.label4.Text = "Adress";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // SavePerson
             // 
@@ -230,7 +215,6 @@
             this.label3.Size = new System.Drawing.Size(72, 22);
             this.label3.TabIndex = 27;
             this.label3.Text = "Salary";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // salary
             // 
@@ -238,7 +222,6 @@
             this.salary.Name = "salary";
             this.salary.Size = new System.Drawing.Size(116, 20);
             this.salary.TabIndex = 26;
-            this.salary.TextChanged += new System.EventHandler(this._salary_TextChanged);
             // 
             // photoBox
             // 
@@ -275,7 +258,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(234, 264);
             this.panel1.TabIndex = 29;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // CreateTeacherForm
             // 
@@ -288,7 +270,6 @@
             this.Controls.Add(this.SavePerson);
             this.Name = "CreateTeacherForm";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.CreateTeacherForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.photoBox)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

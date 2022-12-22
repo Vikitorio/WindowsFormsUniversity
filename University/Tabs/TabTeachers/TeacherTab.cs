@@ -15,7 +15,7 @@ namespace University
         private MainForm Main;
         public Panel _createElementForm;
         public Form _activeForm;
-        public listTeacher _listTeacher = new listTeacher();
+        public listTeacher _listTeacher = listTeacher.GetInstance();
         public TeachersTab(MainForm MForm)
         {
             Main = MForm;

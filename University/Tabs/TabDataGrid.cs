@@ -13,17 +13,12 @@ namespace University.Tabs
     public partial class TabDataGrid : Form
     {
         private MainForm _mainForm;
-        private listTeacher _listTeachers;
+        private listTeacher _listTeachers = listTeacher.GetInstance();
         public TabDataGrid(MainForm Main)
         {
             _mainForm = Main;
-            getCurrentList();
             InitializeComponent();
             fillGridTeachersTable();
-        }
-        public void getCurrentList()
-        {
-            this._listTeachers = _mainForm.ListTeachers;
         }
         public void fillGridTeachersTable() {
             for (int i = 0; i < dataGridTeachers.Columns.Count; i++) {

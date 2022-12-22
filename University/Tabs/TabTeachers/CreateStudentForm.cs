@@ -37,7 +37,6 @@ namespace University
             Adress adress = new Adress(country, city, street, house);
             Student newStudent = new Student(name, surname, age, adress, admission,dateCourseWork);
             _teacherBox.Teacher.Students.Add(newStudent);
-            _mainForm.SendDataToMain();
 
         }
 
