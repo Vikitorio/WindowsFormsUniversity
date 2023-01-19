@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="Classes\Adress.cs" />
     <Compile Include="Classes\CourseWork.cs" />
+    <Compile Include="Classes\EmailSender.cs" />
     <Compile Include="Tabs\TabTeachers\CreateTeacherForm.cs">
       <SubType>Form</SubType>
     </Compile>

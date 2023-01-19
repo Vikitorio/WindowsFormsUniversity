@@ -22,7 +22,7 @@ namespace University
             _courseWork = new CourseWork();
             this._admissionYear = 2021;
         }
-        public Student(string name, string surname, int age, Adress adress,int admissionYear, CourseWork courseWork) : base(name, surname, age, adress)
+        public Student(string name, string surname, int age, Adress adress,int admissionYear, CourseWork courseWork, String email = "s") : base(name, surname, age, adress, email)
         {
             this._courseWork = courseWork;
             this._admissionYear = admissionYear;

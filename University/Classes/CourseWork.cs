@@ -15,7 +15,7 @@ namespace University.Classes
         public CourseWork() {
             _title = "Programuvanie";
             _startDate = new DateTime(2022,12,19);
-            _deadLine = new DateTime(2023, 1, 19);
+            _deadLine = new DateTime(2023, 2, 19);
         }
         public CourseWork(String title, DateTime start , DateTime deadLine)
         {

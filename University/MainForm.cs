@@ -21,6 +21,7 @@ namespace University
         {
             InitializeComponent();
             openTab(new TabTeachers(this), BtnTeachers);
+            ActivateButton(this.BtnTeachers);
         }
         public void openTab(Form newTab , Object button) {
             
@@ -36,17 +37,32 @@ namespace University
             Tab.BringToFront();
             Tab.Show();
             _currentTab = Tab;
+
+   
+        }
+        private void ActivateButton(Button btn) {
+            if (_currentButton != null) {
+                _currentButton.BackColor = Color.FromArgb(79, 103, 166);
+            }
+ 
+            //btn.BackColor = Color.Red;
+            _currentButton = btn;
+            _currentButton.BackColor = Color.FromArgb(73, 90, 133);
         }
         private void TabTeachers_Click(object sender, EventArgs e)
         {
+            ActivateButton(this.BtnTeachers);
             openTab(new TabTeachers(this), sender);
         }
         private void BtnCharts_Click(object sender, EventArgs e)
         {
+            ActivateButton(this.BtnCharts);
+
             openTab(new TabCharts(this), sender);
         }
         private void BtnGrid_Click(object sender, EventArgs e)
         {
+            ActivateButton(this.BtnGrid);
             openTab(new TabDataGrid(this), sender);
         }
         private void SaveData_Click(object sender, EventArgs e)

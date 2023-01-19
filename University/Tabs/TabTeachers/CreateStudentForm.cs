@@ -33,9 +33,10 @@ namespace University
             string city = this.city.Text;
             string street = this.street.Text;
             int house = int.Parse(this.house.Text);
+            string email = this.StudentEmail.Text;
             CourseWork dateCourseWork = new CourseWork(courseWorkTitle.Text,DateTime.Now,deadLine.Value);
             Adress adress = new Adress(country, city, street, house);
-            Student newStudent = new Student(name, surname, age, adress, admission,dateCourseWork);
+            Student newStudent = new Student(name, surname, age, adress, admission,dateCourseWork,email);
             _teacherBox.Teacher.Students.Add(newStudent);
 
         }

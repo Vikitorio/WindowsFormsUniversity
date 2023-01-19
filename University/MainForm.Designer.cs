@@ -57,14 +57,14 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(180, 511);
+            this.panel1.Size = new System.Drawing.Size(180, 641);
             this.panel1.TabIndex = 3;
             // 
             // BtnGrid
             // 
             this.BtnGrid.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnGrid.FlatAppearance.BorderSize = 0;
-            this.BtnGrid.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(112)))), ((int)(((byte)(200)))));
+            this.BtnGrid.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InactiveBorder;
             this.BtnGrid.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnGrid.Font = new System.Drawing.Font("Arial Black", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.BtnGrid.ForeColor = System.Drawing.Color.White;
@@ -82,7 +82,7 @@
             // 
             this.BtnCharts.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnCharts.FlatAppearance.BorderSize = 0;
-            this.BtnCharts.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(112)))), ((int)(((byte)(200)))));
+            this.BtnCharts.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InactiveBorder;
             this.BtnCharts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCharts.Font = new System.Drawing.Font("Arial Black", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.BtnCharts.ForeColor = System.Drawing.Color.White;
@@ -100,7 +100,7 @@
             // 
             this.BtnTeachers.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnTeachers.FlatAppearance.BorderSize = 0;
-            this.BtnTeachers.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(112)))), ((int)(((byte)(200)))));
+            this.BtnTeachers.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InactiveBorder;
             this.BtnTeachers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnTeachers.Font = new System.Drawing.Font("Arial Black", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.BtnTeachers.ForeColor = System.Drawing.Color.White;
@@ -169,7 +169,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(894, 511);
+            this.ClientSize = new System.Drawing.Size(958, 641);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.MinimumSize = new System.Drawing.Size(16, 550);

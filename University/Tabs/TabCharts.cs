@@ -50,5 +50,21 @@ namespace University.Tabs
 
             }
         }
+
+        private void BtnSendNotification_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < _listTeacher.List.Count; i++) {
+                for (int j = 0; j < _listTeacher.List[i].Students.Count(); j++)
+                {
+                    if (_listTeacher.List[i].Students[j].CourseTask.DeadLine < DateTime.Now) {
+                        EmailSender.sendEmail(_listTeacher.List[i].Students[j].Mail, "Чайс вийшов", "твоя курсова робота не здана вчасно");
+                    }
+                        
+                }
+            }
+            
+        }
+
+
     }
 }

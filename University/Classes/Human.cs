@@ -14,6 +14,7 @@ namespace University
         protected int _age;
         protected Adress _adress;
         protected string _photo = "";
+        protected string _mail = "";
 
         public Human()
         {
@@ -21,13 +22,15 @@ namespace University
             this._surname = "Surname";
             this._age = 18;
             this._adress = new Adress();
+            this._mail = "mikhalchevskiu@gmail.com";
         }
-        public Human(string name, string surname, int age, Adress adress)
+        public Human(string name, string surname, int age, Adress adress, string mail = "sadasd")
         {
             this._name = name;
             this._surname = surname;
             this._age = age;
             this._adress = adress;
+            _mail = mail;
         }
         public void WriteToJson(string fileLink)
         {
@@ -88,6 +91,10 @@ namespace University
         {
             get { return _photo; }
             set { _photo = value; }
+        }
+        public string Mail {
+            get { return this._mail; }
+            set { this._mail = value; }
         }
     }
 }

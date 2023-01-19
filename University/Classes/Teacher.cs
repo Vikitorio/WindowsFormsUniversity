@@ -20,7 +20,7 @@ namespace University
                 this._subject = Subject.None;
             this._salary = 6500;
         }
-        public Teacher(string name, string surname, int age, Adress adress, int salary) : base(name, surname, age, adress)
+        public Teacher(string name, string surname, int age, Adress adress, int salary, string email = "1234@gmail.com") : base(name, surname, age, adress,email)
         {
             _students = new List<Student>();
             this._salary = salary;

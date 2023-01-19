@@ -50,6 +50,8 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Email = new System.Windows.Forms.Label();
+            this.StudentEmail = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.SavePerson = new System.Windows.Forms.Button();
             this.photoBox = new System.Windows.Forms.PictureBox();
@@ -59,28 +61,28 @@
             // 
             // house
             // 
-            this.house.Location = new System.Drawing.Point(106, 302);
+            this.house.Location = new System.Drawing.Point(106, 356);
             this.house.Name = "house";
             this.house.Size = new System.Drawing.Size(116, 20);
             this.house.TabIndex = 31;
             // 
             // street
             // 
-            this.street.Location = new System.Drawing.Point(106, 276);
+            this.street.Location = new System.Drawing.Point(106, 330);
             this.street.Name = "street";
             this.street.Size = new System.Drawing.Size(116, 20);
             this.street.TabIndex = 29;
             // 
             // city
             // 
-            this.city.Location = new System.Drawing.Point(106, 250);
+            this.city.Location = new System.Drawing.Point(106, 304);
             this.city.Name = "city";
             this.city.Size = new System.Drawing.Size(116, 20);
             this.city.TabIndex = 27;
             // 
             // country
             // 
-            this.country.Location = new System.Drawing.Point(106, 224);
+            this.country.Location = new System.Drawing.Point(106, 278);
             this.country.Name = "country";
             this.country.Size = new System.Drawing.Size(116, 20);
             this.country.TabIndex = 24;
@@ -115,7 +117,7 @@
             // 
             // deadLine
             // 
-            this.deadLine.Location = new System.Drawing.Point(106, 165);
+            this.deadLine.Location = new System.Drawing.Point(106, 156);
             this.deadLine.Name = "deadLine";
             this.deadLine.Size = new System.Drawing.Size(116, 20);
             this.deadLine.TabIndex = 40;
@@ -125,7 +127,7 @@
             this.lable6.AutoSize = true;
             this.lable6.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lable6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(58)))), ((int)(((byte)(116)))));
-            this.lable6.Location = new System.Drawing.Point(1, 164);
+            this.lable6.Location = new System.Drawing.Point(1, 155);
             this.lable6.Name = "lable6";
             this.lable6.Size = new System.Drawing.Size(109, 22);
             this.lable6.TabIndex = 41;
@@ -176,7 +178,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(58)))), ((int)(((byte)(116)))));
-            this.label11.Location = new System.Drawing.Point(54, 188);
+            this.label11.Location = new System.Drawing.Point(54, 242);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(94, 29);
             this.label11.TabIndex = 14;
@@ -187,7 +189,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(58)))), ((int)(((byte)(116)))));
-            this.label12.Location = new System.Drawing.Point(4, 298);
+            this.label12.Location = new System.Drawing.Point(4, 352);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(72, 22);
             this.label12.TabIndex = 13;
@@ -198,7 +200,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(58)))), ((int)(((byte)(116)))));
-            this.label13.Location = new System.Drawing.Point(4, 272);
+            this.label13.Location = new System.Drawing.Point(4, 326);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(68, 22);
             this.label13.TabIndex = 11;
@@ -209,7 +211,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(58)))), ((int)(((byte)(116)))));
-            this.label14.Location = new System.Drawing.Point(4, 246);
+            this.label14.Location = new System.Drawing.Point(4, 300);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(50, 22);
             this.label14.TabIndex = 9;
@@ -220,7 +222,7 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(58)))), ((int)(((byte)(116)))));
-            this.label15.Location = new System.Drawing.Point(4, 220);
+            this.label15.Location = new System.Drawing.Point(4, 274);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(91, 22);
             this.label15.TabIndex = 7;
@@ -239,6 +241,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.Email);
+            this.panel1.Controls.Add(this.StudentEmail);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label11);
@@ -262,8 +266,26 @@
             this.panel1.Controls.Add(this.street);
             this.panel1.Location = new System.Drawing.Point(12, 101);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(234, 328);
+            this.panel1.Size = new System.Drawing.Size(234, 379);
             this.panel1.TabIndex = 45;
+            // 
+            // Email
+            // 
+            this.Email.AutoSize = true;
+            this.Email.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Email.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(58)))), ((int)(((byte)(116)))));
+            this.Email.Location = new System.Drawing.Point(0, 177);
+            this.Email.Name = "Email";
+            this.Email.Size = new System.Drawing.Size(67, 22);
+            this.Email.TabIndex = 42;
+            this.Email.Text = "Email";
+            // 
+            // StudentEmail
+            // 
+            this.StudentEmail.Location = new System.Drawing.Point(105, 180);
+            this.StudentEmail.Name = "StudentEmail";
+            this.StudentEmail.Size = new System.Drawing.Size(116, 20);
+            this.StudentEmail.TabIndex = 43;
             // 
             // label17
             // 
@@ -283,7 +305,7 @@
             this.SavePerson.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SavePerson.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SavePerson.ForeColor = System.Drawing.Color.White;
-            this.SavePerson.Location = new System.Drawing.Point(12, 435);
+            this.SavePerson.Location = new System.Drawing.Point(12, 486);
             this.SavePerson.Name = "SavePerson";
             this.SavePerson.Size = new System.Drawing.Size(234, 41);
             this.SavePerson.TabIndex = 43;
@@ -307,6 +329,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(126)))), ((int)(((byte)(206)))));
             this.ClientSize = new System.Drawing.Size(251, 539);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.SavePerson);
@@ -345,5 +368,7 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Button SavePerson;
         private System.Windows.Forms.PictureBox photoBox;
+        private System.Windows.Forms.Label Email;
+        private System.Windows.Forms.TextBox StudentEmail;
     }
 }

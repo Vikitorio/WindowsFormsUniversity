@@ -48,7 +48,6 @@
             this.teacherName.Size = new System.Drawing.Size(193, 30);
             this.teacherName.TabIndex = 1;
             this.teacherName.Text = "Name Surname";
-            this.teacherName.Click += new System.EventHandler(this.teacherName_Click);
             // 
             // showList
             // 

@@ -50,33 +50,18 @@ namespace University
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            
-            _mainForm._activeForm.Close();
+
             String StudentInput="";
             for (int i = 0; i < Teacher.Students.Count; i++) {
                 StudentInput += Teacher.Students[i].dataToStr() +"\n--------------------\n" ;
             }
-            RichTextBox textBox = new RichTextBox();
-            textBox.Size = new System.Drawing.Size(200, 400);
-            textBox.Text = StudentInput;
-            _mainForm._createElementForm.Controls.Add(textBox);
-
+           _mainForm.showStudentList(StudentInput);
         }
 
 
         private void addStudent_Click(object sender, EventArgs e)
         {
             _mainForm.openNewMenu(new CreateStudentForm(_mainForm , this));
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void teacherName_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void _photoBox_Click(object sender, EventArgs e)
